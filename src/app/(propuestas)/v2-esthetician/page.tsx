@@ -43,9 +43,8 @@ export default function V2Esthetician() {
     // Variants for smooth animations
     const fadeUp = {
         hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
     };
-
     return (
         <div className="min-h-screen bg-[#FDFBF9] text-[#4A3C31] selection:bg-[#E8D4CC] selection:text-[#4A3C31] font-sans">
 
